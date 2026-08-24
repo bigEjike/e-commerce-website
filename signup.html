@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup_button</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-group_label{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: green;
+        }
+
+        .form-group_input{
+            width: 50%;
+            padding: 10px 14px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 16px;
+            color: #333333;
+            background-color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .form-group_input:focus{
+            outline: none;
+            border-color: green;
+            box-shadow: 0 0 0 3px rgba(26, 92, 56, 0.1);
+        }
+    </style>
+
+
+</head>
+<body>
+    <nav class="nav_section">
+
+        <div class="nav_logo">
+            <h2>EJITECH stores</h2>
+        </div>
+
+        <div class="nav_links">
+            <a href="home.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#deals">Deals</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav_buttons">
+            <button class="login_button">login</button>
+            <button class="signup_button">sign up</button>
+        </div>
+
+    </nav>
+
+    <div>
+        <h1>SIGN UP</h1>
+        <p>please fill in every details correctly</p>
+
+        <label for="name" class="form-group_label">FIRST NAME</label>
+        <input class="form-group_input" type="text" id="name" name="name"><br>
+
+        <label for="name" class="form-group_label">SURNAME</label>
+        <input class="form-group_input" type="text" id="name" name="name"><br>
+
+        <label for="email" class="form-group_label">Email</label>
+        <input class="form-group_input" type="email" id="email" name="email" placeholder="@gmail.com"><br>
+
+        <label for="phone" class="form-group_label">PHONE NUMBER</label>
+        <input class="form-group_input" type="tel" id="phone" name="phone" placeholder="080xxxxxxxx" pattern="[0-9]{11}"><br>
+
+        <label for="referal code" class="form-group_label">REFERAL CODE (optional)</label>
+        <input class="form-group_input" type="text" id="text" name="text" placeholder="wx3tx4"><br>
+
+        <label><input type="checkbox" name="terms" value="agreed required">I agree</label><br>
+
+        <div class="nav_buttons">
+            <button class="signup_button">sign up</button>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
